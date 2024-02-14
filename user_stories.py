@@ -17,7 +17,26 @@ Task goal:
 
 
 def user_story_1(input_text: str):
-    print(input_text)
+    by_line_input_text = input_text.split("\n")
+    print(by_line_input_text)
+
+    for i in range(len(by_line_input_text)):
+        line = ""
+        for j in range(len(by_line_input_text[i])):
+            if j % 3 == 0:
+                line += "X"
+            line += by_line_input_text[i][j]
+
+        print(line)
+
+
+
+        # print(by_line_input_text[i])
+        # if not input_text[i].isspace():
+        #     recognise_one_or_four()
 
 def parse_numbers():
     pass
+
+def recognise_one_or_four():
+    print("1 or 4")
