@@ -16,6 +16,8 @@ Task goal:
 """
 
 
-def user_story_1():
-    print(f"Hello from user_story_1!")
+def user_story_1(input_text: str):
+    print(input_text)
 
+def parse_numbers():
+    pass
