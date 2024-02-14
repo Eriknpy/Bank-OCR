@@ -6,7 +6,7 @@ def main():
     directory = "./user_story_inputs/"
     file_name = f"{os.listdir(directory)[0]}"
     file_path = os.path.join(directory, file_name)
-    input_file = get_user_story_content(file_path)
+    input_file = get_user_story_content(file_path).rstrip()
     user_story_1(input_file)
 
 
